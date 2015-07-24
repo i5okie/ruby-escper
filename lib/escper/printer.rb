@@ -97,7 +97,7 @@ module Escper
         
         testtext =
         "\e!\x38" +  # double tall, double wide, bold
-        "#{ I18n.t :printing_test }\r\n" +
+        "#{ :printing_test }\r\n" +
         "\e!\x00" +  # Font A
         "#{ value[:name] }\r\n" +
         "#{ value[:device].inspect }"
